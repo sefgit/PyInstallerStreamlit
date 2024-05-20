@@ -1,3 +1,12 @@
+# UPDATE
+
+using: pyinstaller v. 6.6.0 
+```
+pyi-makespec --icon=icon.ico --add-data main.py:. --add-data cert:. --add-data cert:cert --add-data static:static  --add-data .streamlit:.streamlit --hidden-import streamlit --collect-all streamlit --copy-metadata streamlit run_main.py 
+```
+
+
+
 # Streamlit to Executable
 #### [tutorial](https://youtu.be/G7Qeg_rbYM8)
 ## Create a virtual environment
@@ -167,3 +176,6 @@ pyinstaller run_app.spec --clean
 
 <pre>Huge Thanks To: hmasdev<pre>
 <pre>I'm organizing the solution from <a href="https://discuss.streamlit.io/t/using-pyinstaller-or-similar-to-create-an-executable/902/18"> hmasdev in the Streamlit Forum</a></pre>
+
+
+
